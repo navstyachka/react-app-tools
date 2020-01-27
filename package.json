@@ -18,7 +18,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "git branch | grep '*' | egrep -v ',^* master$'"
+      "pre-push": "lint-staged && git branch | grep \"*\" | egrep -v \"^* master$\""
     }
   },
   "devDependencies": {
